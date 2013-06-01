@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="VideoFeed">
 <head>
-  <title>Footage Feed</title>
+  <title>Video Feed</title>
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		Video Feed
+	</header>
 
   <%= yield %>
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="//releases.flowplayer.org/5.4.0/flowplayer.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
   <%= javascript_include_tag "application" %>
